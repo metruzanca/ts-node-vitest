@@ -1,0 +1,25 @@
+{
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "compilerOptions": {
+    // defaults
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    // changes
+    "target": "es2020",
+    "baseUrl": "./",
+    "paths": {
+      "$/*": ["./src/*"]
+    },
+    "types": [
+      "vitest/globals",
+    ]
+  }
+}

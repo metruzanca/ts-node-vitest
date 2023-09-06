@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "vitest": "^0.34.3"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "scripts": {
+    "test": "vitest",
+    "test:gen": "ts-node -r tsconfig-paths/register lib/generate-test-files.ts",
+    "start": "ts-node -r tsconfig-paths/register"
+  }
+}
